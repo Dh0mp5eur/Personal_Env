@@ -92,11 +92,11 @@ parse_git_branch () {
 
 # Prompt
 if [[ ${EUID} == 0 ]] ; then {
-        PS1="\[${BOLD}${RED}\]\u \[$BASE0\]\[$ORANGE\]at \[$BASE0\]\[$MAGENTA\]\h \[$BASE0\]\[$ORANGE\]in \[$BASE0\]\[$CYAN\]\w\[$BASE0\]\[$RED\]\[$BASE0\]\n\[${BOLD}${RED}\]# \[$RESET\]"
+        PS1="\[${BOLD}${RED}\]\u \[$BASE0\]\[$ORANGE\]at \[$BASE0\]\[$BLUE\]\h \[$BASE0\]\[$ORANGE\]in \[$BASE0\]\[$CYAN\]\w\[$BASE0\]\[$RED\]\[$BASE0\]\n\[${BOLD}${RED}\]# \[$RESET\]"
 }
 else
 {
-        PS1="\[${BOLD}${GREEN}\]\u \[$BASE0\]\[$ORANGE\]at \[$BASE0\]\[$MAGENTA\]\h \[$BASE0\]\[$ORANGE\]in \[$BASE0\]\[$CYAN\]\w\[$BASE0\]\[$ORANGE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\n\[${BOLD}${GREEN}\]\$ \[$RESET\]"
+        PS1="\[${BOLD}${GREEN}\]\u \[$BASE0\]\[$ORANGE\]at \[$BASE0\]\[$BLUE\]\h \[$BASE0\]\[$ORANGE\]in \[$BASE0\]\[$CYAN\]\w\[$BASE0\]\[$ORANGE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on\")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\n\[${BOLD}${GREEN}\]\$ \[$RESET\]"
 }
 fi
 
