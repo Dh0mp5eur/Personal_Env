@@ -127,6 +127,7 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 fi
 
 # Alias:
+	alias sudo='sudo -E'
         alias ls='ls -h --color=auto'
         alias grep='grep --colour=auto'
         alias ll='ls -hl'
