@@ -29,9 +29,9 @@ echo '##############################'
 read input
 if [ $input == 'y' ]
 then curl "${GITURL}"/vim/vimrc  > ~/.vimrc
-fi
 mkdir ~/vim
 mkdir ~/vim/colors
 curl "${GITURL}"/vim/colors/solarized.vim > ~/vim/colors/solarized.vim
+fi
 clear
 input=0
