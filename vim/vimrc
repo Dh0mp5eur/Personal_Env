@@ -30,7 +30,7 @@ set hidden
 syntax enable
 
 "Utilise la version sombre de Solarized
-set background=light
+set background=dark
 colorscheme solarized
 
 " Police
