@@ -42,6 +42,7 @@ then curl "${GITURL}"/vim/vimrc  > ~/.vimrc
 mkdir ~/.vim
 mkdir ~/.vim/colors
 curl "${GITURL}"/vim/colors/solarized.vim > ~/vim/colors/solarized.vim
+curl "${GITURL}"/vim/colors/zenburn.vim > ~/vim/colors/zenburn.vim
 fi
 clear
 input=0
