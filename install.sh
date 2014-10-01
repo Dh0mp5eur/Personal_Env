@@ -22,6 +22,16 @@ then curl "${GITURL}"bashrc.srv > ~/.bashrc
 fi
 clear
 input=0
+# Install InputRC
+echo '##############################'
+echo '# Installer InputRC? [y/n]'
+echo '##############################'
+read input
+if [ $input == 'y' ]
+then curl "${GITURL}"inputrc > ~/.inputrc
+fi
+clear
+input=0
 # Install VimRC and Solarized
 echo '##############################'
 echo '# Installer VimRC? [y/n]'
@@ -32,6 +42,16 @@ then curl "${GITURL}"/vim/vimrc  > ~/.vimrc
 mkdir ~/vim
 mkdir ~/vim/colors
 curl "${GITURL}"/vim/colors/solarized.vim > ~/vim/colors/solarized.vim
+fi
+clear
+input=0
+# Install GitConfig
+echo '##############################'
+echo '# Installer GitConfig? [y/n]'
+echo '##############################'
+read input
+if [ $input == 'y' ]
+then curl "${GITURL}"gitconfig > ~/.gitconfig
 fi
 clear
 input=0
