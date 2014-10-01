@@ -136,4 +136,5 @@ fi
         alias ssa='ssh-add'
 
 # Export:
+	export TERM="xterm-256color"
         export MANPAGER="/usr/bin/most -s"
