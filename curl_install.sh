@@ -56,3 +56,13 @@ then curl "${GITURL}"gitconfig > ~/.gitconfig
 fi
 clear
 input=0
+# Install YakuakeRC
+echo '##############################'
+echo '# Installer Yakuake? [y/n]'
+echo '##############################'
+read input
+if [ $input == 'y' ]
+then curl "${GITURL}"yakuakerc > ~/.kde/share/config/yakuakerc
+fi
+clear
+input=0

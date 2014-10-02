@@ -43,13 +43,13 @@ scp -r vim "${HOST}":.vim
 fi
 clear
 input=0
-# Install GitConfig
+# Install YakuakeRC
 echo '##############################'
-echo '# Installer GitConfig? [y/n]'
+echo '# Installer YakuakeRC? [y/n]'
 echo '##############################'
 read input
 if [ $input == 'y' ]
-then scp gitconfig "${HOST}":.gitconfig
+then scp yakuakerc "${HOST}":.kde/share/config/yakuakerc
 fi
 clear
 input=0
