@@ -39,7 +39,7 @@ echo '##############################'
 read input
 if [ $input == 'y' ]
 then scp vim/vimrc  "${HOST}":.vimrc
-scp -r vim "${HOST}":.vim
+scp -r vim "${HOST}":.vim/
 fi
 clear
 input=0
